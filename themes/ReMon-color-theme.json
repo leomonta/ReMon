@@ -1,18 +1,43 @@
 {
+	// Various settings meaning
+	// https://code.visualstudio.com/api/references/theme-color
 	"name": "ReMon",
 	"colors": {
-		"editor.background": "#141219",
-		"editor.foreground": "#e5e5e5",
-		
-		
+		"focusBorder": "#ff0000",
+
+		"toolbar.hoverBackground": "#271a46",
+		"toolbar.activeBackground": "#3b286b",
+
+		"button.background": "#330077",
+		"button.foreground": "#e5e5e5",
+		"button.separator": "#220055",
+		"button.border": "#220055",
+		"button.secondaryBackground": "#330077",
+		"button.secondaryForeground": "#e5e5e5",
+		"checkbox.background": "#ff0000",
+		"checkbox.border": "#ff0000",
+		"checkbox.foreground": "#ff0000",
+		"checkbox.selectBackground": "#ff0000",
+		"checkbox.selectBorder": "#ff0000",
+
+		"dropdown.background": "#29272e",
+		"dropdown.listBackground": "#29272e",
+		"dropdown.border": "#19171e",
+
+		"input.background": "#29272e",
+		"input.foreground": "#e5e5e5",
+		"input.border": "#19171e",
+
+		"progressBar.background": "#330077",
+
 		"activityBar.background": "#16141b",
 		"activityBar.dropBorder": "#d5d5d5",
 		"activityBar.foreground": "#e5e5e5",
 		"activityBar.inactiveForeground": "#353535",
 		// "activityBar.border": "#16141b",
-		"activityBarBadge.background": "#5500ff",
+		"activityBarBadge.background": "#440099",
 		"activityBarBadge.foreground": "#e5e5e5",
-		"activityBar.activeBorder": "#5500ff",
+		"activityBar.activeBorder": "#440099",
 		"activityBar.activeBackground": "#1c1a22",
 		"activityBar.activeFocusBorder": "#aa44ff",
 		"activityBarItem.profilesForeground": "#ff0000",
@@ -26,7 +51,19 @@
 		"sideBarSectionHeader.background": "#1c1a22",
 		"sideBarSectionHeader.foreground": "#e5e5e5",
 
-		// "minimap.background": "#ff0000",
+		"editorGroupHeader.noTabsBackground": "#19171e",
+		"editorGroupHeader.tabsBackground": "#19171e",
+		"editorGroupHeader.border": "#19171e",
+		"editorGroup.emptyBackground" : "#0f0c0f",
+
+		"editor.background": "#141219",
+		"editor.foreground": "#e5e5e5",
+		"editorLineNumber.foreground": "#959595",
+		"editorLineNumber.activeForeground": "#e5e5e5",
+		"editorCursor.background":"#222222",
+		"editorCursor.foreground": "#eeeeee",
+
+		"editor.selectionBackground": "#5a505a"
 	},
 	/*
 	"editor.tokenColorCustomizations": {
