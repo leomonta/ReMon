@@ -1,19 +1,42 @@
 {
 	// Various settings meaning
 	// https://code.visualstudio.com/api/references/theme-color
+	// main color #5500ff
+	// hsv -> 260 255 255
+	// counter color #aaff00
+	// hsv -> 80 255 255
 	"name": "ReMon",
 	"colors": {
-		"focusBorder": "#ff0000",
+		"focusBorder": "#5500ff",
+		"foreground": "#f7ffe8",
+		"disabledForeground": "#666960",
+		"widget.shadow": "#220066",
+		"selection.background": "#552266",
+		"descriptionForeground": "#ff0000",
+		"errorForeground": "#ff0000",
+		"icon.foreground": "#f7ffe8",
+		"sash.hoverBorder": "#ff0000",
+
+		"window.activeBorder": "#ff0000",
+		"window.inactiveBorder": "#ff0000",
+
+		"textBlockQuote.background": "#ff0000",
+		"textBlockQuote.border": "#ff0000",
+		"textCodeBlock.background": "#ff0000",
+		"textLink.activeForeground": "#ff0000",
+		"textPreformat.foreground": "#ff0000",
+		"textSeparator.foreground": "#ff0000",
 
 		"toolbar.hoverBackground": "#271a46",
+		"toolbar.hoverOutline": "#271a46",
 		"toolbar.activeBackground": "#3b286b",
 
 		"button.background": "#330077",
-		"button.foreground": "#e5e5e5",
-		"button.separator": "#220055",
-		"button.border": "#220055",
-		"button.secondaryBackground": "#330077",
-		"button.secondaryForeground": "#e5e5e5",
+		"button.foreground": "#f7ffe8",
+		"button.separator": "#220077",
+		"button.border": "#220077",
+		"button.secondaryBackground": "#220077",
+		"button.secondaryForeground": "#f7ffe8",
 		"checkbox.background": "#ff0000",
 		"checkbox.border": "#ff0000",
 		"checkbox.foreground": "#ff0000",
@@ -25,18 +48,26 @@
 		"dropdown.border": "#19171e",
 
 		"input.background": "#29272e",
-		"input.foreground": "#e5e5e5",
+		"input.foreground": "#f7ffe8",
 		"input.border": "#19171e",
+
+		"scrollbar.shadow": "#211b2f",
+		"scrollbarSlider.activeBackground": "#343449",
+		"scrollbarSlider.background": "#242239",
+		"scrollbarSlider.hoverBackground": "#2a2841",
+
+		"badge.background": "#440099",
+		"badge.foreground": "#f7ffe8",
 
 		"progressBar.background": "#330077",
 
-		"activityBar.background": "#16141b",
+		"activityBar.background": "#03000a",
 		"activityBar.dropBorder": "#d5d5d5",
-		"activityBar.foreground": "#e5e5e5",
+		"activityBar.foreground": "#f7ffe8",
 		"activityBar.inactiveForeground": "#353535",
 		// "activityBar.border": "#16141b",
 		"activityBarBadge.background": "#440099",
-		"activityBarBadge.foreground": "#e5e5e5",
+		"activityBarBadge.foreground": "#f7ffe8",
 		"activityBar.activeBorder": "#440099",
 		"activityBar.activeBackground": "#1c1a22",
 		"activityBar.activeFocusBorder": "#aa44ff",
@@ -44,26 +75,26 @@
 		"activityBarItem.profilesBackground": "#00ff00",
 		"activityBarItem.profilesHoverForeground": "#ff00ff",
 
-		"sideBar.background": "#19171e",
-		"sideBar.foreground": "#e5e5e5",
+		"sideBar.background": "#050010",
+		"sideBar.foreground": "#f7ffe8",
 		// "sideBar.border": "#19171e",
-		"sideBarTitle.foreground": "#e5e5e5",
+		"sideBarTitle.foreground": "#f7ffe8",
 		"sideBarSectionHeader.background": "#1c1a22",
-		"sideBarSectionHeader.foreground": "#e5e5e5",
+		"sideBarSectionHeader.foreground": "#f7ffe8",
 
 		"editorGroupHeader.noTabsBackground": "#19171e",
 		"editorGroupHeader.tabsBackground": "#19171e",
 		"editorGroupHeader.border": "#19171e",
-		"editorGroup.emptyBackground" : "#0f0c0f",
+		"editorGroup.emptyBackground": "#0f0c0f",
 
-		"editor.background": "#141219",
-		"editor.foreground": "#e5e5e5",
-		"editorLineNumber.foreground": "#959595",
-		"editorLineNumber.activeForeground": "#e5e5e5",
-		"editorCursor.background":"#222222",
-		"editorCursor.foreground": "#eeeeee",
+		"editor.background": "#080017", // -> 260 255 23
+		"editor.foreground": "#f7ffe8", // opposite of background
+		"editorLineNumber.foreground": "#666960",
+		"editorLineNumber.activeForeground": "#f7ffe8",
+		"editorCursor.background": "#080017",
+		"editorCursor.foreground": "#f7ffe8",
 
-		"editor.selectionBackground": "#5a505a"
+		"editor.selectionBackground": "#5a6445"
 	},
 	/*
 	"editor.tokenColorCustomizations": {
@@ -102,7 +133,7 @@
 				"constant.other.color"
 			],
 			"settings": {
-				"foreground": "#e5e5e5"
+				"foreground": "#f7ffe8"
 			}
 		},
 		{
