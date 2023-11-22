@@ -46,58 +46,7 @@
 
 local lush = require('lush')
 local hsl = lush.hsl
-local function clamp(a, b, c)
-	return math.max(math.min(a, b), c)
-end
-
-local function oklab(L, a, bb)
-	local L_ = L + 0.3963377774 * a + 0.2158037573 * bb
-	local M_ = L - 0.1055613458 * a - 0.0638541728 * bb
-	local S_ = L - 0.0894841775 * a - 1.2914855480 * bb
-
-	local L__ = L_ * L_ * L_
-	local M__ = M_ * M_ * M_
-	local S__ = S_ * S_ * S_
-
-
-	local r = (4.0767416621 * L__ + 2.6097574011 * M__ - 0.3413193965 * S__)
-	local g = (-1.2684380046 * L__ + 2.6097574011 * M__ - 0.3413193965 * S__)
-	local b = (-0.0041960863 * L__ - 0.7034186147 * M__ + 1.7076147010 * S__)
-
-	local max, min = math.max(r, g, b), math.min(r, g, b)
-	local h, s, l
-
-	l = (max + min) / 2
-
-	if max == min then
-		h, s = 0, 0 -- achromatic
-	else
-		local d = max - min
-		if l > 0.5 then
-			s = d / (2 - max - min)
-		else 
-			s = d / (max + min)
-		end
-		if max == r then
-				h = (g - b) / d
-			if g < b then
-				h = h + 6
-			end
-		elseif max == g then
-			h = (b - r) / d + 2
-		elseif max == b then
-			h = (r - g) / d + 4
-		end
-		h = h / 6
-	end
-
-	return hsl(h, s, l)
-end
-
-local function oklch(L, c, h)
-	return oklab(L, c * math.cos(h), c * math.sin(h))
-end
-
+--
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
 ---@diagnostic disable: undefined-global
@@ -113,8 +62,7 @@ local theme = lush(function(injected_functions)
 		-- to reorder items as you go.
 		--
 		-- See :h highlight-groups
-		-- Normal {bg = oklab(0.1, 0.0, 0.4), fg = hsl(208, 90, 30)}
-		Normal {bg = oklab(0.2, -0.4, 0.4), fg = hsl(208, 90, 30)},
+		Normal {bg = hsl(208, 90, 30), fg = hsl(208, 90, 30)},
 		--
 		-- ColorColumn    { }, -- Columns set with 'colorcolumn'
 		-- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
